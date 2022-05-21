@@ -4,6 +4,7 @@ function Nav() {
   return (
     <div className="nav">
       THIS IS NAV
+      <div>Added new commit</div>
     </div>
   );
 }
