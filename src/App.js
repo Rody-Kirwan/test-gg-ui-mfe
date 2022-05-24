@@ -18,6 +18,7 @@ function App() {
           Test Migration
         </a>
         <div>UPDATE App.js</div>
+        <div>Update after ejecting MFE</div>
       </header>
     </div>
   );
