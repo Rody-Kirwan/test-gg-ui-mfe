@@ -1,6 +1,6 @@
-import './App.css';
+import '../App/App/css';
 
-function Nav() {
+function Test2() {
   return (
     <div className="test">
       NEW FILE
@@ -8,4 +8,4 @@ function Nav() {
   );
 }
 
-export default App;
+export default Test2;
