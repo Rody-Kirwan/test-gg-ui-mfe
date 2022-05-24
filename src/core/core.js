@@ -1,0 +1,1 @@
+export const core1 = () => 'core 1';

@@ -1,8 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { core1 } from '../../core/core';
 
-function App() {
+function AppContainer() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +22,6 @@ function App() {
         <div>Update after ejecting MFE</div>
         <div>Updating all files in App</div>
         <div>Test Diff</div>
-        <div>{core1()}</div>
       </header>
     </div>
   );
