@@ -20,6 +20,7 @@ function App() {
         </a>
         <div>UPDATE App.js</div>
         <div>Update after ejecting MFE</div>
+        <div>Updating all files in App</div>
       </header>
     </div>
   );
