@@ -1,9 +1,5 @@
-<<<<<<< HEAD:src/components/Nav/Nav.js
-import '../App/App/css';
-=======
 import React from 'react';
-import './App.css';
->>>>>>> eject-cra:src/Nav.js
+import '../App/App/css';
 
 function Nav() {
   return (
