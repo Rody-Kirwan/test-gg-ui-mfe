@@ -23,6 +23,7 @@ function App() {
         <div>Update after ejecting MFE</div>
         <div>Updating all files in App</div>
         <div>Test Diff</div>
+        <div>Change app.js</div>
         <div>{core1()}</div>
       </header>
     </div>
