@@ -25,6 +25,7 @@ function App() {
         <div>Change app.js</div>
         <div>Test merge</div>
         <div>{core1()}</div>
+        <div>test-script</div>
       </header>
     </div>
   );
