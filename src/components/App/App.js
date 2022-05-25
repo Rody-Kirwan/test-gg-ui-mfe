@@ -24,7 +24,9 @@ function App() {
         <div>Updating all files in App</div>
         <div>Test Diff</div>
         <div>Change app.js</div>
+        <div>Test merge</div>
         <div>{core1()}</div>
+        <div>test-script</div>
       </header>
     </div>
   );
