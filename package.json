@@ -71,7 +71,8 @@
     "check-format": "prettier --check .",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "prepare": "husky install",
-    "coverage": "cross-env BABEL_ENV=test jest --coverage"
+    "coverage": "cross-env BABEL_ENV=test jest --coverage",
+    "resolve:latest": "node ./resolve-latest.js"
   },
   "eslintConfig": {
     "extends": [
