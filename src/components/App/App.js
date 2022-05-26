@@ -26,6 +26,7 @@ function App() {
         <div>Test merge</div>
         <div>{core1()}</div>
         <div>test-script</div>
+        <div>Another test wouldn't hurt!</div>
       </header>
     </div>
   );
