@@ -24,6 +24,7 @@ async function prevalidateMerge() {
     return JSON.parse(lastCommitId);
   } catch (e) {
     console.error('Something went wrong while validating the merge:', e)
+    process.exit(1)
   }
 }
 
@@ -37,6 +38,7 @@ async function deleteBranch(branchName) {
     process.exit(0)
   } catch (e) {
     console.error('Something went wrong while deleting the branch:', e);
+    process.exit(1)
   }
 }
 
@@ -54,13 +56,14 @@ async function createPullRequest(branchName) {
     }, 60000)
   } catch (e) {
     console.error('Something went wrong while creating the PR:', e);
+    process.exit(1)
   }
 }
 
 async function completeMerge(mergeCommitSha) {
   console.log(`Attempting merge from legacy/main...`);
   try {
-    const branchName = `auto_merge_${mergeCommitSha}`;
+    const branchName = `auto_merge_${123}`;
     await git.raw(['checkout', 'main']);
     await git.raw('pull');
 
@@ -79,12 +82,13 @@ async function completeMerge(mergeCommitSha) {
   } catch (e) {
     console.error('Something went wrong while merging changes:', e);
     console.log('Please resolve manually');
+    process.exit(1)
   }
 }
 
 async function createAutoMergePR() {
-  const commitId = await prevalidateMerge();
-  const branchName = await completeMerge(commitId);
+  // const commitId = await prevalidateMerge();
+  const branchName = await completeMerge();
   await createPullRequest(branchName);
 }
 
